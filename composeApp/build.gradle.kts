@@ -51,11 +51,16 @@ kotlin {
             implementation(libs.navigation.compose)
             implementation(libs.kotlinx.serialization.core)
             implementation(libs.kotlinx.serialization.json)
+            implementation(libs.koin.core)
+            implementation(libs.lifecycle.viewmodel.compose)
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.cio)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
         }
+
     }
 }
 
